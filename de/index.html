@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop-Audit für WooCommerce – mehr Bestellungen | deltart audit</title>
+<meta name="description" content="Wir finden und beheben, was Ihre Kunden am Kaufen hindert: Checkout-Fehler, SEO-Probleme, langsame Ladezeiten und Barrierefreiheit nach BFSG. Kostenloser Check von 3 Problemen.">
+<link rel="canonical" href="https://audit.deltart.com/de/">
+<link rel="alternate" hreflang="bg" href="https://audit.deltart.com/">
+<link rel="alternate" hreflang="de" href="https://audit.deltart.com/de/">
+<link rel="alternate" hreflang="x-default" href="https://audit.deltart.com/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:title" content="Shop-Audit für WooCommerce – mehr Bestellungen | deltart audit">
+<meta property="og:description" content="Wir finden und beheben, was Ihre Kunden am Kaufen hindert: Checkout-Fehler, SEO-Probleme, langsame Ladezeiten und Barrierefreiheit nach BFSG. Kostenloser Check von 3 Problemen.">
+<meta property="og:url" content="https://audit.deltart.com/de/">
+<meta name="theme-color" content="#0F1A2B">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap&subset=cyrillic" rel="stylesheet">
+<style>
+:root{--ink:#0F1A2B;--ink2:#1A2840;--paper:#F6F4EF;--card:#FFFFFF;--text:#18202E;--muted:#4A5466;
+--line:#E3DFD5;--yellow:#FFD23F;--yellow-d:#E8B800;--red:#C2333A;--green:#1E7148;--focus:var(--ink);
+--radius:16px;--shadow:0 1px 2px rgba(15,26,43,.06),0 8px 24px rgba(15,26,43,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--paper);color:var(--text);font:400 17px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Manrope,Inter,sans-serif;line-height:1.15;letter-spacing:-.02em;margin:0 0 .5em}
+h2{font-size:clamp(28px,4.2vw,42px);font-weight:800}h3{font-size:20px;font-weight:700}
+p{margin:0 0 1em}a{color:inherit}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
+.dark{--focus:var(--yellow);background:var(--ink);color:#fff}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}@media(min-width:768px){.wrap{padding:0 28px}}
+.skip{position:absolute;left:16px;top:-60px;background:var(--yellow);color:var(--ink);padding:10px 16px;border-radius:8px;font-weight:700;z-index:100;text-decoration:none}
+.skip:focus{top:12px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* header */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(15,26,43,.94);backdrop-filter:blur(8px);color:#fff;--focus:var(--yellow)}
+.nav{display:flex;align-items:center;gap:16px;height:64px}
+.brand{display:flex;align-items:center;gap:8px;font:800 20px Manrope,sans-serif;text-decoration:none;color:#fff}
+.brand-mark{display:grid;place-items:center;width:32px;height:32px;border-radius:9px;background:var(--yellow);color:var(--ink);font-size:18px}
+.brand-sub{font-weight:600;color:#C9D1DE;font-size:15px;margin-left:2px}
+.nav ul{display:none;list-style:none;margin:0 0 0 auto;padding:0;gap:4px}
+.nav ul a{display:block;padding:8px 12px;border-radius:8px;text-decoration:none;color:#DCE2EC;font-weight:500;font-size:15px}
+.nav ul a:hover{background:rgba(255,255,255,.08);color:#fff}
+.nav-right{display:flex;align-items:center;gap:8px;margin-left:auto}
+@media(min-width:900px){.nav ul{display:flex}.nav-right{margin-left:8px}}
+.lang{padding:6px 10px;border:1px solid rgba(255,255,255,.3);border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;color:#fff}
+.lang:hover{border-color:#fff}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:12px 22px;border-radius:12px;border:2px solid transparent;
+font:700 16px Inter,sans-serif;text-decoration:none;cursor:pointer;transition:transform .15s,background .15s}
+.btn-primary{background:var(--yellow);color:var(--ink)}.btn-primary:hover{background:#FFDD66;transform:translateY(-1px)}
+.btn-ghost{border-color:rgba(255,255,255,.4);color:#fff;background:transparent}.btn-ghost:hover{border-color:#fff}
+.btn-dark{background:var(--ink);color:#fff}.btn-dark:hover{background:var(--ink2)}
+.btn-outline{border-color:var(--ink);color:var(--ink);background:transparent}.btn-outline:hover{background:var(--ink);color:#fff}
+.btn-small{white-space:nowrap;min-height:40px;padding:8px 14px;font-size:14px;border-radius:10px}
+/* hero */
+.hero{padding:56px 0 64px;overflow:hidden}
+.hero-grid{display:grid;gap:48px;align-items:center}@media(min-width:960px){.hero-grid{grid-template-columns:1.1fr .9fr}.hero{padding:88px 0 96px}}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;letter-spacing:.04em;text-transform:uppercase;color:var(--yellow);margin-bottom:18px}
+.eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--yellow)}
+.hero h1{font-size:clamp(34px,5.6vw,58px);font-weight:800;margin-bottom:20px}
+.hero h1 em{font-style:normal;color:var(--yellow)}
+.lead{font-size:clamp(17px,2vw,20px);color:#D3DAE5;max-width:38em}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 14px}
+.hero-note{font-size:14px;color:#AEB8C7}
+/* mock */
+.mock{background:#fff;color:var(--text);border-radius:20px;box-shadow:0 30px 60px rgba(0,0,0,.35);padding:0 0 22px;position:relative;max-width:440px;justify-self:center;width:100%}
+.mock-bar{display:flex;gap:6px;padding:14px 16px;border-bottom:1px solid var(--line)}
+.mock-bar span{width:10px;height:10px;border-radius:50%;background:#D6D2C8}
+.mock-body{padding:20px 22px 0}
+.mock-title{font:800 20px Manrope,sans-serif;margin-bottom:14px}
+.field{position:relative;height:44px;border:1.5px solid #CFCAC0;border-radius:10px;margin-bottom:12px;padding:11px 14px;color:#8A8F99;font-size:15px}
+.field.bad{border:2px dashed var(--red)}
+.mock-btn{height:48px;border-radius:12px;background:#E9E6DF;color:#B6B1A7;display:grid;place-items:center;font-weight:700;margin-top:6px;border:2px dashed var(--red)}
+.chip{position:absolute;display:flex;align-items:center;gap:6px;background:var(--red);color:#fff;font-size:13px;font-weight:600;padding:6px 10px;border-radius:999px;box-shadow:0 6px 16px rgba(194,51,58,.35);white-space:nowrap}
+.chip::before{content:"!";display:grid;place-items:center;width:18px;height:18px;border-radius:50%;background:#fff;color:var(--red);font-weight:800;font-size:12px}
+.chip-1{top:96px;right:-10px}.chip-2{bottom:2px;left:-10px}.chip-3{top:-14px;right:18px;background:var(--ink2);box-shadow:0 6px 16px rgba(0,0,0,.3)}
+.chip-3::before{color:var(--ink2)}
+@media(max-width:400px){.brand-sub{display:none}.nav-right .btn-small{padding:8px 10px;font-size:13px}}
+@media(max-width:480px){.chip{font-size:12px}.chip-1{right:6px}.chip-2{left:6px}}
+/* stats */
+.stats{list-style:none;margin:0;padding:0;display:grid;gap:12px;margin-top:-36px;position:relative;z-index:2}
+@media(min-width:768px){.stats{grid-template-columns:repeat(3,1fr)}}
+.stats li{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px 24px;border-top:4px solid var(--yellow)}
+.stats strong{display:block;font:800 32px Manrope,sans-serif;color:var(--ink);letter-spacing:-.02em}
+.stats span{color:var(--muted);font-size:15px}
+/* sections */
+section{padding:72px 0}@media(min-width:960px){section{padding:96px 0}}
+.intro{color:var(--muted);font-size:18px;max-width:40em;margin-bottom:36px}
+.grid{display:grid;gap:16px}
+@media(min-width:700px){.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}}
+@media(min-width:700px) and (max-width:999px){.g4{grid-template-columns:repeat(2,1fr)}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+.card p{color:var(--muted);margin:0}
+.icon{display:grid;place-items:center;width:44px;height:44px;border-radius:12px;background:#FDF1C7;color:var(--ink);font:800 18px Manrope,sans-serif;margin-bottom:16px}
+.problem .icon{background:#FBE3E4;color:var(--red)}
+/* cases */
+.case{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;display:flex;flex-direction:column}
+.case-head{padding:24px 24px 0}
+.tag{display:inline-block;font-size:13px;font-weight:600;color:var(--muted);background:var(--paper);border-radius:999px;padding:4px 12px;margin-bottom:14px}
+.case dl{margin:0;padding:0 24px 20px}.case dt{font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink);margin-top:14px}
+.case dd{margin:4px 0 0;color:var(--muted);font-size:15px}
+.result{margin-top:auto;background:var(--ink);color:#fff;padding:20px 24px}
+.result strong{display:block;font:800 26px Manrope,sans-serif;color:var(--yellow)}
+.result span{font-size:14px;color:#C9D1DE}
+.todo{display:inline-block;margin-top:8px;background:#FF4FA3;color:#fff;font-weight:700;font-size:13px;padding:3px 8px;border-radius:6px}
+/* process */
+.steps{list-style:none;padding:0;margin:0;counter-reset:s}
+.steps li{counter-increment:s;position:relative;padding-top:22px;display:flex}
+.steps li::before{content:counter(s);position:absolute;top:0;left:24px;width:44px;height:44px;border-radius:50%;background:var(--yellow);color:var(--ink);display:grid;place-items:center;font:800 18px Manrope,sans-serif}
+.steps .card{flex:1;padding-top:40px}
+/* pricing */
+.plan{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px;display:flex;flex-direction:column}
+.plan.featured{border:2px solid var(--ink);box-shadow:var(--shadow);position:relative}
+.badge{position:absolute;top:-13px;left:28px;background:var(--yellow);color:var(--ink);font-weight:700;font-size:13px;padding:4px 12px;border-radius:999px}
+.price{font:800 36px Manrope,sans-serif;color:var(--ink);margin:6px 0 2px}
+.plan-sub{color:var(--muted);font-size:15px;margin-bottom:18px}
+.plan ul{list-style:none;padding:0;margin:0 0 24px;flex:1}
+.plan li{padding:7px 0 7px 30px;position:relative;font-size:15px}
+.plan li::before{content:"";position:absolute;left:0;top:11px;width:18px;height:18px;border-radius:50%;background:#DCEFE4 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5 10.5l3 3 7-7' fill='none' stroke='%231E7148' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/14px no-repeat}
+.price-note{text-align:center;color:var(--muted);margin-top:20px;font-size:15px}
+/* agencies */
+.agency{display:grid;gap:24px;align-items:center;border-radius:24px;padding:36px 28px}
+@media(min-width:900px){.agency{grid-template-columns:1.4fr auto;padding:48px}}
+.agency p{color:#D3DAE5;margin:0;max-width:44em}.agency .small{font-size:14px;color:#AEB8C7;margin-top:10px}
+/* faq */
+.faq{max-width:820px}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:10px}
+.faq summary{cursor:pointer;list-style:none;padding:18px 52px 18px 22px;font-weight:700;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);font-size:24px;font-weight:400;color:var(--muted)}
+.faq details[open] summary::after{content:"\2212"}
+.faq details p{padding:0 22px 20px;margin:0;color:var(--muted)}
+/* contact */
+.contact-grid{display:grid;gap:36px}@media(min-width:960px){.contact-grid{grid-template-columns:.9fr 1.1fr}}
+.contact .intro{color:#D3DAE5}
+.perks{list-style:none;padding:0;margin:0 0 24px}.perks li{padding:6px 0 6px 30px;position:relative;color:#E4E9F0}
+.perks li::before{content:"\2713";position:absolute;left:0;color:var(--yellow);font-weight:800}
+form{background:#fff;color:var(--text);border-radius:20px;padding:28px;--focus:var(--ink)}
+.f{margin-bottom:16px}
+label{display:block;font-weight:600;font-size:15px;margin-bottom:6px}
+.req{color:var(--red)}
+input,select,textarea{width:100%;font:inherit;font-size:16px;color:var(--text);background:#fff;border:1.5px solid #8C93A0;border-radius:10px;padding:12px 14px}
+textarea{min-height:96px;resize:vertical}
+input:focus-visible,select:focus-visible,textarea:focus-visible{border-color:var(--ink)}
+[aria-invalid=true]{border-color:var(--red);border-width:2px}
+.err{color:var(--red);font-size:14px;margin-top:6px;font-weight:500}
+.check{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:14px;color:var(--muted)}
+.check input{width:20px;height:20px;margin-top:2px;flex:none;accent-color:var(--ink)}
+.form-note{font-size:13px;color:var(--muted);margin:10px 0 0}
+.hp{position:absolute;left:-9999px}
+#form-status{margin-top:14px;font-weight:600}
+#form-status.ok{color:var(--green)}#form-status.bad{color:var(--red)}
+.alt{margin-top:18px;color:#C9D1DE;font-size:15px}.alt a{color:var(--yellow)}
+footer{padding:28px 0;font-size:14px;color:#AEB8C7;border-top:1px solid rgba(255,255,255,.1)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between}
+footer a{color:#DCE2EC}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Zum Inhalt springen</a>
+<header class="site-header">
+ <div class="wrap nav">
+  <a class="brand" href="../"><span class="brand-mark" aria-hidden="true">Δ</span>deltart<span class="brand-sub">audit</span><span class="sr"> – Startseite</span></a>
+  <nav aria-label="Hauptnavigation"><ul><li><a href="#results">Ergebnisse</a></li><li><a href="#checks">Leistungen</a></li><li><a href="#pricing">Preise</a></li><li><a href="#faq">FAQ</a></li></ul></nav>
+  <div class="nav-right">
+   <a class="lang" href=".././" hreflang="bg" lang="bg"><span aria-hidden="true">BG</span><span class="sr">Български</span></a>
+   <a class="btn btn-primary btn-small" href="#contact">Kostenloser Check</a>
+  </div>
+ </div>
+</header>
+<main id="main">
+ <div class="dark">
+ <div class="hero"><div class="wrap hero-grid">
+  <div>
+   <p class="eyebrow">Shop-Audit für WooCommerce</p>
+   <h1>Wir finden und beheben, was Ihre Kunden <em>am Kaufen hindert</em>.</h1>
+   <p class="lead">Die meisten Shops verlieren Bestellungen im Checkout, bei Google und auf dem Smartphone – genau dort, wo selten jemand hinschaut. Wir prüfen den gesamten Kaufweg und beheben die Probleme direkt im Code. Inklusive Barrierefreiheit nach BFSG.</p>
+   <div class="cta-row"><a class="btn btn-primary" href="#contact">Kostenloser 3-Probleme-Check</a><a class="btn btn-ghost" href="#results">Ergebnisse ansehen</a></div>
+   <p class="hero-note">Unverbindlich. Antwort innerhalb von 2 Werktagen.</p>
+  </div>
+  <div class="mock" role="img" aria-label="Illustration: eine Checkout-Seite mit drei typischen markierten Problemen – ein Feld ohne Beschriftung, ein per Tastatur unsichtbarer Button und blockierter Zugriff für Google.">
+   <div class="mock-bar"><span></span><span></span><span></span></div>
+   <div class="mock-body"><div class="mock-title">Kasse</div><div class="field bad">Name</div><div class="field">Telefon</div><div class="field">Lieferadresse</div><div class="mock-btn">Jetzt kaufen</div></div>
+   <span class="chip chip-1">Feld ohne Beschriftung</span><span class="chip chip-2">Button per Tastatur unsichtbar</span><span class="chip chip-3">Google: Zugriff blockiert</span>
+  </div>
+ </div></div>
+ </div>
+ <div class="wrap"><ul class="stats" aria-label="Ergebnisse aus unseren Projekten"><li><strong>≈ +70 %</strong><span>mehr Bestellungen pro Tag nach den Korrekturen – Blumenshop</span></li><li><strong>403 → 200</strong><span>Google indexiert den Shop wieder – Laptop-Shop</span></li><li><strong>60 %</strong><span>Speicherplatz auf dem Server freigegeben – Möbelshop</span></li></ul></div>
+
+ <section aria-labelledby="p-h"><div class="wrap">
+  <h2 id="p-h">Wo Shops Bestellungen verlieren</h2><p class="intro">Diese Probleme zeigt Ihnen kein Analytics-Tool. Der Kunde geht einfach.</p>
+  <div class="grid g4"><div class="card problem"><div class="icon" aria-hidden="true">!</div><h3>Der Checkout blockiert</h3><p>Ein Lieferkalender, der per Tastatur nicht funktioniert, Felder ohne Beschriftung, Fehlermeldungen ohne Erklärung.</p></div><div class="card problem"><div class="icon" aria-hidden="true">G</div><h3>Google sieht Sie nicht</h3><p>Falsche Canonical-URL, blockierter Googlebot, fehlende Beschreibungen – und der Shop verschwindet aus der Suche.</p></div><div class="card problem"><div class="icon" aria-hidden="true">⏱</div><h3>Langsam auf dem Smartphone</h3><p>Schwere Themes und Plugins, unoptimierte Bilder. Jede Sekunde Ladezeit kostet Bestellungen.</p></div><div class="card problem"><div class="icon" aria-hidden="true">♿</div><h3>Nicht barrierefrei</h3><p>Menschen mit Sehbehinderung, ältere Kunden, Nutzer ohne Maus – sie können oft nicht bestellen. Und seit Juni 2025 gilt für viele Shops das BFSG.</p></div></div>
+ </div></section>
+
+ <section id="checks" aria-labelledby="c-h" style="padding-top:0"><div class="wrap">
+  <h2 id="c-h">Was wir prüfen</h2><p class="intro">Wir testen den gesamten Kaufweg manuell: Startseite, Kategorie, Produkt, Warenkorb, Kasse und Kundenkonto.</p>
+  <div class="grid g3"><div class="card"><div class="icon" aria-hidden="true">🛒</div><h3>Warenkorb &amp; Checkout</h3><p>Jeder Klick bis zur Bestellung – auf Desktop und Smartphone.</p></div><div class="card"><div class="icon" aria-hidden="true">♿</div><h3>Barrierefreiheit (WCAG 2.1 AA)</h3><p>Tastatur, Screenreader, Kontraste, Formulare.</p></div><div class="card"><div class="icon" aria-hidden="true">G</div><h3>Technisches SEO</h3><p>Indexierung, Canonical, Meta-Beschreibungen, strukturierte Daten.</p></div><div class="card"><div class="icon" aria-hidden="true">⚡</div><h3>Ladezeit</h3><p>Core Web Vitals, schwere Skripte, Bilder.</p></div><div class="card"><div class="icon" aria-hidden="true">★</div><h3>Vertrauen</h3><p>Bewertungen, Zahlungsarten, Rechtstexte, Cookie-Banner.</p></div><div class="card"><div class="icon" aria-hidden="true">⚠</div><h3>Fehler &amp; Sicherheit</h3><p>JavaScript-Fehler, veraltete Plugins, offene Endpunkte.</p></div></div>
+ </div></section>
+
+ <section id="results" aria-labelledby="r-h" style="background:#EDE9E0"><div class="wrap">
+  <h2 id="r-h">Ergebnisse aus echten Projekten</h2><p class="intro">Drei WooCommerce-Shops. Drei unterschiedliche Probleme.</p>
+  <div class="grid g3"><article class="case"><div class="case-head"><span class="tag">Blumenshop · buketite.net</span><h3>Tastaturnutzer konnten kein Lieferdatum wählen</h3></div><dl><dt>Problem</dt><dd>Über 15 Barrierefreiheits- und Checkout-Probleme, eine fehlerhafte Canonical-URL und eine kaputte Facebook-Vorschau.</dd><dt>Was wir gemacht haben</dt><dd>Vollständiges Audit des Kaufwegs, Korrekturen im Theme-Code, SEO-Fixes und Prüfung im Live-Shop.</dd></dl><div class="result"><span class="sr">Ergebnis: </span><strong>≈ 11 → 19 Bestellungen pro Tag</strong><span>in den Wochen nach den Korrekturen</span></div></article><article class="case"><div class="case-head"><span class="tag">Laptop-Shop · pcheaven.bg</span><h3>Google kam nicht mehr in den Shop</h3></div><dl><dt>Problem</dt><dd>Eine Cloudflare-Regel blockierte auch den Googlebot. Dazu Checkout-Felder, die auf dem iPhone heranzoomen, schwache Kontraste und fehlende SEO-Texte.</dd><dt>Was wir gemacht haben</dt><dd>Regel korrigiert, mobiler Checkout, Kontraste und SEO-Texte überarbeitet.</dd></dl><div class="result"><span class="sr">Ergebnis: </span><strong>403 → 200</strong><span>Googlebot indexiert den Shop wieder</span><span class="todo">[PageSpeed: XX → XX]</span></div></article><article class="case"><div class="case-head"><span class="tag">Möbelshop · kromadesign.bg</span><h3>Voller Server, fehlgeschlagene Updates, manueller Katalog</h3></div><dl><dt>Problem</dt><dd>Kein freier Speicher mehr, Plugin-Updates schlugen fehl, und die Produkte des Lieferanten wurden manuell und fehleranfällig importiert.</dd><dt>Was wir gemacht haben</dt><dd>Bereinigung, neues schlankes Theme ohne Elementor und automatischer Abgleich mit dem Lieferanten.</dd></dl><div class="result"><span class="sr">Ergebnis: </span><strong>60 % Speicher frei</strong><span>und 90 % des Katalogs (über 2.900 Produkte) aktualisieren sich automatisch</span></div></article></div>
+ </div></section>
+
+ <section aria-labelledby="s-h"><div class="wrap">
+  <h2 id="s-h">So arbeiten wir</h2>
+  <ol class="steps grid g4" style="margin-top:36px"><li><div class="card"><h3>Kostenloser Check</h3><p>Sie senden uns die Adresse Ihres Shops. Innerhalb von 2 Werktagen erhalten Sie 3 konkrete Probleme mit Screenshots.</p></div></li><li><div class="card"><h3>Vollständiges Audit</h3><p>Ein detaillierter Bericht: jedes Problem, wie schwer es wiegt und wie es behoben wird.</p></div></li><li><div class="card"><h3>Umsetzung</h3><p>Wir beheben die Probleme im Code – nicht mit Overlay-Widgets, die sie nur verstecken.</p></div></li><li><div class="card"><h3>Monitoring</h3><p>Monatliche Prüfung, damit nach Updates nichts zurückkommt.</p></div></li></ol>
+ </div></section>
+
+ <section id="pricing" aria-labelledby="pr-h" style="padding-top:0"><div class="wrap">
+  <h2 id="pr-h">Transparente Preise</h2><p class="intro">Festpreis, vorab vereinbart. Keine Überraschungen nach Stunden.</p>
+  <div class="grid g3" style="padding-top:14px"><div class="plan"><h3>Kostenloser Check</h3><p class="price">0 €</p><p class="plan-sub">3 konkrete Probleme</p><ul><li>3 Probleme mit Screenshots</li><li>Kurze Erklärung zu jedem</li><li>Unverbindlich</li></ul><a class="btn btn-outline" href="#contact">Check anfordern</a></div><div class="plan"><h3>Nur Audit</h3><p class="price">ab 290 €</p><p class="plan-sub">wenn Sie eigene Entwickler haben</p><ul><li>Vollständiger Bericht mit allen Problemen</li><li>Schweregrad und Lösung für jedes Problem</li><li>30 Min. Besprechung des Berichts</li></ul><a class="btn btn-outline" href="#contact">Audit anfragen</a></div><div class="plan featured"><span class="badge">Empfohlen</span><h3>Audit + Umsetzung</h3><p class="price">ab 890 €</p><p class="plan-sub">für Shops ohne eigene Entwickler</p><ul><li>Vollständiges Audit des Kaufwegs</li><li>Behebung aller kritischen und schweren Probleme</li><li>Prüfung im Live-Shop</li><li>Vorher-/Nachher-Bericht</li></ul><a class="btn btn-dark" href="#contact">Jetzt starten</a></div></div>
+  <p class="price-note">Monatliches Monitoring und Wartung ab 79 € pro Monat.</p>
+ </div></section>
+
+ <section aria-labelledby="a-h" style="padding-top:0"><div class="wrap">
+  <div class="agency dark"><div><h2 id="a-h">Für Agenturen: White-Label</h2><p>Ihre Kunden haben Onlineshops und fragen nach dem BFSG – aber Ihnen fehlt die Kapazität? Wir arbeiten unter Ihrem Namen: Sie bleiben Ansprechpartner, wir übernehmen Audit und Umsetzung im Hintergrund.</p><p class="small">Wir kommunizieren schriftlich auf Deutsch, Gespräche führen wir auf Englisch.</p></div>
+  <a class="btn btn-primary" href="#contact">Gespräch vereinbaren</a></div>
+ </div></section>
+
+ <section id="faq" aria-labelledby="f-h" style="padding-top:0"><div class="wrap">
+  <h2 id="f-h">Häufige Fragen</h2><div class="faq" style="margin-top:28px"><details><summary>Ist das eine Rechtsberatung?</summary><p>Nein. Das Audit ist eine technische Prüfung nach WCAG 2.1 AA und Best Practices. Es ersetzt keine Rechtsberatung und garantiert keine rechtliche Konformität.</p></details><details><summary>Muss mein Shop barrierefrei sein?</summary><p>Seit dem 28. Juni 2025 gilt das Barrierefreiheitsstärkungsgesetz (BFSG) für viele Onlineshops, die an Verbraucher verkaufen. Kleinstunternehmen (unter 10 Beschäftigte und unter 2 Mio. € Umsatz) sind bei Dienstleistungen in der Regel ausgenommen. Aber auch ohne Pflicht verkauft ein barrierefreier Shop an mehr Kunden.</p></details><details><summary>Mit welchen Plattformen arbeiten Sie?</summary><p>Schwerpunkt WooCommerce und WordPress. Ein Audit ist für jeden Onlineshop möglich.</p></details><details><summary>Brauchen Sie Zugang zum Shop?</summary><p>Für den kostenlosen Check und das Audit nicht. Für die Umsetzung ja – wenn möglich arbeiten wir zuerst auf einer Kopie.</p></details><details><summary>Wie lange dauert es?</summary><p>Kostenloser Check: bis zu 2 Werktage. Audit: etwa eine Woche. Die Umsetzung hängt vom Umfang ab und wird vorab vereinbart.</p></details><details><summary>Warum stammen Ihre Referenzen aus Bulgarien?</summary><p>Wir sitzen in Sofia und arbeiten remote für Shops in ganz Europa. Die Technik – WooCommerce, WCAG, Google – ist überall dieselbe.</p></details><details><summary>Und wenn Sie nichts finden?</summary><p>Dann sagen wir Ihnen das direkt – und Sie zahlen nichts.</p></details></div>
+ </div></section>
+
+ <section id="contact" class="dark contact" aria-labelledby="k-h"><div class="wrap contact-grid">
+  <div>
+   <h2 id="k-h">Kostenlosen Check anfordern</h2><p class="intro">Füllen Sie das Formular aus – innerhalb von 2 Werktagen erhalten Sie 3 konkrete Probleme Ihres Shops.</p>
+   <ul class="perks"><li>Konkrete Probleme mit Screenshots, keine allgemeinen Tipps</li><li>Unverbindlich und ohne Vertrag</li><li>Antwort innerhalb von 2 Werktagen</li></ul>
+   <p class="alt">Lieber direkt? Schreiben Sie an <a href="mailto:hello@deltart.com">hello@deltart.com</a></p>
+  </div>
+  <form id="audit-form" novalidate data-msg="{&quot;required&quot;: &quot;Bitte füllen Sie dieses Feld aus.&quot;, &quot;email&quot;: &quot;Bitte geben Sie eine gültige E-Mail-Adresse ein.&quot;, &quot;consent&quot;: &quot;Bitte bestätigen Sie Ihre Einwilligung.&quot;, &quot;ok&quot;: &quot;Danke! Ihre Anfrage ist angekommen. Sie hören innerhalb von 2 Werktagen von uns.&quot;, &quot;fail&quot;: &quot;Etwas ist schiefgelaufen. Schreiben Sie uns direkt an hello@deltart.com.&quot;, &quot;subject&quot;: &quot;Anfrage: kostenloser Check&quot;}">
+   <div class="f"><label for="f-name">Name <span class="req" aria-hidden="true">*</span></label><input id="f-name" name="name" autocomplete="name" required></div>
+   <div class="f"><label for="f-email">E-Mail <span class="req" aria-hidden="true">*</span></label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+   <div class="f"><label for="f-url">Shop-Adresse (URL) <span class="req" aria-hidden="true">*</span></label><input id="f-url" name="shop" type="url" inputmode="url" placeholder="https://" autocomplete="url" required></div>
+   <div class="f"><label for="f-topic">Was beschäftigt Sie am meisten?</label><select id="f-topic" name="topic"><option>Zu wenige Bestellungen</option><option>Nicht sichtbar bei Google</option><option>Langsame Website</option><option>Barrierefreiheit / BFSG</option><option>Etwas anderes</option></select></div>
+   <div class="f"><label for="f-msg">Möchten Sie uns noch etwas mitteilen? (optional)</label><textarea id="f-msg" name="message"></textarea></div>
+   <div class="hp" aria-hidden="true"><label for="f-web">Website</label><input id="f-web" name="website" tabindex="-1" autocomplete="off"></div>
+   <div class="f"><label class="check"><input id="f-consent" type="checkbox" name="consent" required><span>Ich bin einverstanden, dass meine Angaben nur zur Beantwortung dieser Anfrage verwendet werden. <span class="req" aria-hidden="true">*</span></span></label></div>
+   <button class="btn btn-dark" type="submit" style="width:100%">Anfrage senden</button>
+   <p class="form-note">Mit * markierte Felder sind Pflichtfelder.</p>
+   <p id="form-status" role="status" aria-live="polite"></p>
+  </form>
+ </div>
+ <footer><div class="wrap"><span>© 2026 deltart · Martin Aleksandrov</span><span style="display:flex;gap:18px"><a href="/impressum">Impressum</a><a href="/datenschutz">Datenschutz</a></span></div></footer>
+ </section>
+</main>
+<script>
+(function(){
+  var FORM_ENDPOINT = ""; // e.g. https://formspree.io/f/XXXX  (empty = opens email app)
+  var TO = "hello@deltart.com";
+  var f = document.getElementById("audit-form"); if(!f) return;
+  var st = document.getElementById("form-status");
+  var M = JSON.parse(f.getAttribute("data-msg"));
+  function setErr(el,msg){var id=el.id+"-err";var e=document.getElementById(id);
+    if(msg){if(!e){e=document.createElement("p");e.className="err";e.id=id;(el.type==="checkbox"?el.closest(".f"):el.parentNode).appendChild(e);}
+      e.textContent=msg;el.setAttribute("aria-invalid","true");el.setAttribute("aria-describedby",id);}
+    else{if(e)e.remove();el.removeAttribute("aria-invalid");el.removeAttribute("aria-describedby");}}
+  function validate(){var first=null;
+    f.querySelectorAll("[required]").forEach(function(el){var m="";
+      if(el.type==="checkbox"){if(!el.checked)m=M.consent;}
+      else if(!el.value.trim())m=M.required;
+      else if(el.type==="email"&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(el.value.trim()))m=M.email;
+      setErr(el,m);if(m&&!first)first=el;});
+    return first;}
+  f.addEventListener("submit",function(ev){ev.preventDefault();st.className="";st.textContent="";
+    if(f.querySelector(".hp input").value)return;
+    var bad=validate();if(bad){bad.focus();return;}
+    var d=new FormData(f);
+    if(!FORM_ENDPOINT){var body="";d.forEach(function(v,k){if(k!=="website"&&k!=="consent")body+=k+": "+v+"\n";});
+      location.href="mailto:"+TO+"?subject="+encodeURIComponent(M.subject)+"&body="+encodeURIComponent(body);
+      st.className="ok";st.textContent=M.ok;return;}
+    fetch(FORM_ENDPOINT,{method:"POST",body:d,headers:{Accept:"application/json"}})
+      .then(function(r){if(!r.ok)throw 0;f.reset();st.className="ok";st.textContent=M.ok;})
+      .catch(function(){st.className="bad";st.textContent=M.fail;});
+  });
+})();
+</script>
+</body>
+</html>
